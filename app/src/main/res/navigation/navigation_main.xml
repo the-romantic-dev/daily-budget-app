@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.dahy.daily_budget_app.view.MainFragment"
+        android:label="Daily Budget"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_manageBudgetFragment"
+            app:destination="@id/manageBudgetFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_addExpenseDialogFragment"
+            app:destination="@id/addExpenseDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/manageBudgetFragment"
+        android:name="com.dahy.daily_budget_app.view.ManageBudgetFragment"
+        android:label="Manage Budget"
+        tools:layout="@layout/fragment_manage_budget"/>
+    <dialog
+        android:id="@+id/addExpenseDialogFragment"
+        android:name="com.dahy.daily_budget_app.view.AddExpenseDialogFragment"
+        android:label="AddExpenseDialogFragment"
+        tools:layout="@layout/dialog_add_expense"/>
+</navigation>

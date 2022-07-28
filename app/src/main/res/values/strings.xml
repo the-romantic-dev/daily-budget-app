@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">daily_budget_app</string>
+    <string name="app_name">Daily Budget</string>
+    <string name="today_budget_label">Your today budget</string>
+    <string name="add_expense_button">Add expense</string>
+    
+    <!-- Add expense dialog strings -->
+    <string name="add_expense_dialog_title">Add expense</string>
+
+    <!-- Add expense dialog strings -->
+    <string name="base_today_sum">500₽</string>
+
+
+    <string name="main_fragment_name">Daily Budget</string>
+    <string name="manage_budget_fragment_name">Manage Budget</string>
+    <string name="expense_input_hint">Input your expense</string>
+    <string name="drawer_header_content_description">Drawer header</string>
+    <string name="total_budget_label">Total budget:</string>
+    <string name="total_budget_edit_text_hint">Insert</string>
+    <string name="add_expense_button_content_description">Add expense button</string>
+    <string name="total_budget_edit_button_content_descritpion">Edit button</string>
 </resources>

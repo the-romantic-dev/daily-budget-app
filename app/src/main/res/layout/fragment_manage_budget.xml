@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="12dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/BaseTextStyle.Dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_budget_label"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/total_budget_edit_btn"
+                android:layout_marginStart="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:src="@drawable/icon_edit"
+                android:contentDescription="@string/total_budget_edit_button_content_descritpion" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:id="@+id/total_budget_value"
+                style="@style/BaseTextStyle.Dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500₽"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/total_budget_edit_text"
+                style="@style/BaseTextStyle.Dark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/total_budget_edit_text_hint"
+                android:textSize="24sp"
+                android:visibility="gone"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
