@@ -18,4 +18,6 @@
     <string name="total_budget_edit_text_hint">Insert</string>
     <string name="add_expense_button_content_description">Add expense button</string>
     <string name="total_budget_edit_button_content_descritpion">Edit button</string>
+    <string name="main_fragment_total_budget_label">Total:</string>
+    <string name="ruble_sign">₽</string>
 </resources>
